@@ -1,5 +1,5 @@
 name_bucket       = "terraform-emr-python-010203040506"
-name_emr          = "terraform-emr-python-01020304050607"
+name_emr          = "terraform-emr-python-0102030405060709127"
 versioning_bucket = "Enabled"
 files_bucket      = "../python/python_aws"
 files_data        = "../data"

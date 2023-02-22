@@ -40,7 +40,9 @@ Na nuvem, há também duas formas de execução. Em uma delas, o processamento �
 
 Pelo terraform, são criados o bucket S3 e o cluster EMR. Além disso, todos os arquivos importantes do projeto são copiados para o S3 e todos os comandos que o cluster EMR irá executar são determinados pelo terraform. Isso é feito para que o terraform consiga executar tudo automaticamente.
 
-O cluster EMR é criado pelo terraform e encerrado automaticamente, após realizar as suas tarefas.
+O cluster EMR é criado pelo terraform e encerrado automaticamente, após realizar as suas tarefas. Abaixo está a arquitetura simplificada do terraform.
+
+<img src="./imgs/TerraformArquitetura.png">
 
 ### Execução do Projeto
 
@@ -63,6 +65,7 @@ Para executar o jupyter notebook, entre no arquivo NLP_PySpark_Project.ipynb da 
 Para executar dessa forma, basta executar os seguintes comandos:
 
 <code>pip install -r ./python/python_local/requirements.txt</code>
+
 <code>python ./python/python_local/main.py</code>
 
 #### 3 - Python - Processamento Local e Armazenamento na Nuvem
@@ -74,6 +77,7 @@ Com isso feito, crie um arquivo .env na pasta ./python/python_aws. Nesse arquivo
 Após isso, execute os comandos:
 
 <code>pip install -r ./python/python_aws/requirements.txt</code>
+
 <code>python ./python/python_aws/main.py</code>
 
 #### 4 - Python - Processamento e Armazenamento na Nuvem
@@ -83,6 +87,8 @@ Para executar dessa forma, assim como do jeito anterior, adquira o nome do bucke
 Com isso feito, execute os seguintes comandos:
 
 <code>cd ./terraform</code>
+
 <code>terraform init</code>
+
 <code>terraform apply</code>
 
