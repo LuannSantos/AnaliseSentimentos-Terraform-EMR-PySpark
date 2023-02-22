@@ -84,7 +84,11 @@ Após isso, execute os comandos:
 
 Para executar dessa forma, assim como do jeito anterior, adquira o nome do bucket S3, a Access key ID e a Secret access key. Com esses dados, preencha o arquivo .env da pasta ./python/python_aws.
 
-Com isso feito, execute os seguintes comandos:
+Depois, execute o seguinte comando do AWS CLI:
+
+<code>aws configure</code>
+
+Através desse comando, informe a Access key ID, a Secret access key e a região AWS. Com isso feito, execute os seguintes comandos:
 
 <code>cd ./terraform</code>
 
