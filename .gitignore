@@ -1,0 +1,8 @@
+.terraform
+.env
+__pycache__
+logs
+data
+output
+.ipynb_checkpoints
+.terraform.lock.hcl

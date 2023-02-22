@@ -1,0 +1,3 @@
+pendulum
+boto3
+python-dotenv
